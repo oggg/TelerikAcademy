@@ -1,0 +1,21 @@
+h1, ul {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-size: 34px;
+	color: cyan;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: grey;
+}

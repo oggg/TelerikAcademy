@@ -1,0 +1,16 @@
+body {
+	background-color: grey;
+}
+
+p {
+	font-weight: bold;
+}
+
+label {
+	font-style: italic;
+	color:blue;
+}
+
+span {
+	color: red;
+}

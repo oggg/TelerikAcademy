@@ -1,0 +1,457 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"null",
+				"nullValue"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"getele",
+				"getElementsByName〔function〕"
+			],
+			[
+				"g",
+				"getElementsByTagName〔function〕"
+			],
+			[
+				"demo",
+				"demo〔function〕"
+			],
+			[
+				"string",
+				"stringVar"
+			],
+			[
+				"sty",
+				"styles"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"select",
+				"selectedIndex"
+			],
+			[
+				"sele",
+				"select〔variable〕"
+			],
+			[
+				"a",
+				"alert"
+			],
+			[
+				"l",
+				"log	JS - Log to console"
+			],
+			[
+				"ch",
+				"chrome64"
+			],
+			[
+				"app",
+				"appSettings"
+			],
+			[
+				"bowr",
+				"browserSync"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Data types and Variables.sublime-project",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+					""
+				],
+				[
+					"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"open ",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"add fo",
+				"Project: Add Folder"
+			],
+			[
+				"add ",
+				"Project: Add Folder"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html ",
+				"Set Syntax: HTML"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"jsfo",
+				"Project: Refresh Folders"
+			],
+			[
+				"key binding",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"kety",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"new ",
+				"File: New View into File"
+			],
+			[
+				"close ",
+				"File: Close All"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"isntal ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 549.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"gulp serve",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/styles"
+	],
+	"file_history":
+	[
+		"/D/Telerik/HomeWorks/javascript-basics/TESTING/userinput.html",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/problem1.html",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/index.html",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/styles/problem1.css",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/styles/index.css",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/problem4.html",
+		"/D/Telerik/Sublime Text Build 3083 x64-Portable/Data/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/styles/problem2.css",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/script/problem1.js",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/script/problem3.js",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/problem3.html",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/script/problem2.js",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/problem2.html",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/test.html",
+		"/D/Telerik/Sublime Text Build 3083 x64-Portable/Data/Packages/User/Preferences.sublime-settings",
+		"/D/Telerik/Sublime Text Build 3083 x64-Portable/Data/Packages/User/JavaScript.sublime-settings",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/script/topalkata.html",
+		"/D/Telerik/HomeWorks/javascript-basics/Data types and Variables/script/topalkata.js",
+		"/D/Telerik/HomeWorks/javascript-basics/index.html",
+		"/D/Telerik/subTextFiles/HW1/problem1.html",
+		"/D/Telerik/subTextFiles/inner.html",
+		"/D/Telerik/Sublime Text Build 3083 x64-Portable - Minkov/Data/Packages/User/View In Browser.sublime-settings",
+		"/D/Telerik/GitHub/JavaScript-Fundamentals/02. Introduction to JavaScript Development/3. external-js-files.html",
+		"/D/Telerik/GitHub/JavaScript-Fundamentals/02. Introduction to JavaScript Development/2.small-example.html",
+		"/D/Telerik/Sublime Text Build 3083 x64-Portable - Minkov/Data/Packages/User/Preferences.sublime-settings",
+		"/D/Telerik/Learning Materials/js/test.js",
+		"/D/Telerik/Learning Materials/js/index2.html",
+		"/C/CSS/examples/telerik-academy-2015-css-exam-2-task-2/tests.js",
+		"/D/installs/Sublime Text Build 3083 x64-Portable - Minkov/Data/Packages/User/Preferences.sublime-settings",
+		"/D/installs/Sublime Text Build 3083 x64-Portable - Minkov/Data/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/D/Telerik/Learning Materials/js/index.html",
+		"/D/installs/Sublime Text Build 3083 x64-Portable - Minkov/Data/Packages/SublimeCodeIntel/Default (Windows).sublime-mousemap",
+		"/D/installs/Sublime Text Build 3083 x64-Portable - Minkov/Data/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap",
+		"/D/installs/Sublime Text Build 3083 x64-Portable - Minkov/Data/Packages/User/Node.sublime-build",
+		"/D/installs/Sublime Text Build 3083 x64-Portable - Minkov/Data/Packages/View In Browser/View In Browser.sublime-settings",
+		"/D/installs/Sublime Text Build 3083 x64-Portable - Minkov/Data/Packages/User/View In Browser.sublime-settings",
+		"/C/Dropbox/Workspace/HTML/grunt-with-livereload/README.md",
+		"/C/Dropbox/Workspace/HTML/grunt-with-livereload/gruntfile.coffee",
+		"/C/Dropbox/Workspace/HTML/grunt-with-livereload/package.json",
+		"/C/Dropbox/Workspace/HTML/grunt-with-livereload/gruntfile.js",
+		"/C/Dropbox/Workspace/HTML/grunt-with-livereload/app/index.html",
+		"/C/Dropbox/Workspace/HTML/grunt-with-livereload/app/scripts/main.js",
+		"/C/Dropbox/Workspace/HTML/grunt-with-livereload/app/css/main.css",
+		"/C/Dropbox/Workspace/HTML/grunt-with-livereload/app/css/main.styl",
+		"/C/Dropbox/Workspace/HTML/grunt-with-livereload/app/css/main-l.less",
+		"/C/Dropbox/Workspace/HTML/grunt-with-livereload/app/css/main-s.scss",
+		"/C/Dropbox/Workspace/HTML/sublime-test/gulpfile.js",
+		"/C/Dropbox/Workspace/HTML/sublime-test/app/index.html",
+		"/C/Dropbox/Workspace/HTML/sublime-test/app/css/main.css",
+		"/C/Dropbox/Workspace/HTML/sublime-test/app/css/main.styl",
+		"/C/Dropbox/Workspace/HTML/sublime-test/app/js/main.js",
+		"/C/Dropbox/Workspace/HTML/sublime-test/app/css/main-l.css",
+		"/C/Dropbox/Workspace/HTML/sublime-test/app/css/main-l.less",
+		"/C/Dropbox/Workspace/HTML/sublime-test/app/css/main-s.scss",
+		"/C/Dropbox/Workspace/HTML/sublime-test/app/css/main-s.css",
+		"/C/Dropbox/Workspace/HTML/sublime-test/app/gulpfile.js",
+		"/C/Dropbox/Workspace/HTML/sublime-test/index.html",
+		"/C/Dropbox/Workspace/HTML/sublime-test/js/main.js",
+		"/C/Dropbox/Workspace/HTML/sublime-test/css/main.css",
+		"/C/Dropbox/Workspace/HTML/sublime-test/package.json",
+		"/C/Sublime Text Build 3083 x64-Portable/Data/Packages/Shell Turtlestein/Shell Turtlestein.sublime-settings",
+		"/C/Sublime Text Build 3083 x64-Portable/Data/Packages/cmd/Context.sublime-meny",
+		"/C/Sublime Text Build 3083 x64-Portable/Data/Packages/cmd/cmd.py",
+		"/C/Dropbox/Workspace/HTML/sublime-test/src/index.html",
+		"/C/Dropbox/Workspace/HTML/sublime-test/dist/index.html",
+		"/C/Sublime Text Build 3083 x64-Portable/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Sublime Text Build 3083 x64-Portable/Data/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/C/Sublime Text Build 3083 x64-Portable/Data/Packages/Default/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"	\n",
+			">"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Data types and Variables.sublime-project",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								38,
+								38
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "json",
+							"buffer_scroll_name": "5157e93b",
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 342.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Data types and Variables.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 287.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
