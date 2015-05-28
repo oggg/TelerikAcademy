@@ -243,136 +243,124 @@ function problem7() {
 // ---------------------------------------------------------------
 
 function problem8() {
+
 	var input = document.getElementById("problem8").value;
-	var hundreds;
-	var tenths;
-	var numbers;
-	var output;
+	var finalOutput;
+	var forTheNumbers = input % 10;
+	var forTheTenths = ((input / 10) | 0) % 10;
+	var forTheHundreds = (input / 100) | 0;
+	var digits = digitHundreds(forTheNumbers);
+	var tenth;
+	var hundred = digitHundreds(forTheHundreds) + ' hundred';
+	var and = ' and ';
 
-	if (input < 20) {
-		switch (input) {
-			case 0: numbers = 'Zero'; break;
-			case 1: numbers = 'One'; break;
-			case 2: numbers = 'Two'; break;
-			case 3: numbers = 'Three'; break;
-			case 4: numbers = 'Four'; break;
-			case 5: numbers = 'Five'; break;
-			case 6: numbers = 'Six'; break;
-			case 7: numbers = 'Seven'; break;
-			case 8: numbers = 'Eight'; break;
-			case 9: numbers = 'Nine'; break;
-			case 10: numbers = 'Ten'; break;
-			case 11: numbers = 'Eleven'; break;
-			case 12: numbers = 'Twelve'; break;
-			case 13: numbers = 'Thirteen'; break;
-			case 14: numbers = 'Fourteen'; break;
-			case 15: numbers = 'Fifteen'; break;
-			case 16: numbers = 'Sixteen'; break;
-			case 17: numbers = 'Seventeen'; break;
-			case 18: numbers = 'Eighteen'; break;
-			case 19: numbers = 'Nineteen'; break;
-		}
-		output = numbers;
-	}
 
-	if (input > 19 && input < 100) {
-		switch ((input / 10) | 0) {
-			case 2: tenths = 'Twenty'; break;
-			case 3: tenths = 'Thirty'; break;
-			case 4: tenths = 'Foutry'; break;
-			case 5: tenths = 'Fifty'; break;
-			case 6: tenths = 'Sixty'; break;
-			case 7: tenths = 'Seventy'; break;
-			case 8: tenths = 'Eighty'; break;
-			case 9: tenths = 'Ninety'; break;
-		}
-
-		if (input % 10 !== 0) {
-		
-		input %= 10;
-
-		switch (input % 10) {
-			case 1: numbers = 'one'; break;
-			case 2: numbers = 'two'; break;
-			case 3: numbers = 'three'; break;
-			case 4: numbers = 'four'; break;
-			case 5: numbers = 'five'; break;
-			case 6: numbers = 'six'; break;
-			case 7: numbers = 'seven'; break;
-			case 8: numbers = 'eight'; break;
-			case 9: numbers = 'nine'; break;
-		}
-		output = tenths + ' ' + numbers;
-		}
-		else {
-			output = tenths;
-		}
-	}
-
-	if (input >= 100) {
-		switch ((input / 100) | 0) {
-			case 1: hundreds = 'One hundred'; break;
-			case 2: hundreds = 'Two hundred'; break;
-			case 3: hundreds = 'Three hundred'; break;
-			case 4: hundreds = 'Four hundred'; break;
-			case 5: hundreds = 'Five hundred'; break;
-			case 6: hundreds = 'Six hundred'; break;
-			case 7: hundreds = 'Seven hundred'; break;
-			case 8: hundreds = 'Eight hundred'; break;
-			case 9: hundreds = 'Nine hundred'; break;
-		}
-
-	if (input % 100 !== 0) {
-
-		switch (((input / 10) | 0) % 10 ) {
-			case 2: tenths = 'twenty'; break;
-			case 3: tenths = 'thirty'; break;
-			case 4: tenths = 'foutry'; break;
-			case 5: tenths = 'fifty'; break;
-			case 6: tenths = 'sixty'; break;
-			case 7: tenths = 'seventy'; break;
-			case 8: tenths = 'eighty'; break;
-			case 9: tenths = 'ninety'; break;
-		}
-
-		if (input % 100 > 19) {
-			input = (input % 100) % 10;
-		}
-		else {
-			input %= 100;
-		}
-
-		switch (input) {			
-			case 1: numbers = 'one'; break;
-			case 2: numbers = 'two'; break;
-			case 3: numbers = 'three'; break;
-			case 4: numbers = 'four'; break;
-			case 5: numbers = 'five'; break;
-			case 6: numbers = 'six'; break;
-			case 7: numbers = 'seven'; break;
-			case 8: numbers = 'eight'; break;
-			case 9: numbers = 'nine'; break;
-			case 10: numbers = 'ten'; break;
-			case 11: numbers = 'eleven'; break;
-			case 12: numbers = 'twelve'; break;
-			case 13: numbers = 'thirteen'; break;
-			case 14: numbers = 'fourteen'; break;
-			case 15: numbers = 'fifteen'; break;
-			case 16: numbers = 'sixteen'; break;
-			case 17: numbers = 'seventeen'; break;
-			case 18: numbers = 'eighteen'; break;
-			case 19: numbers = 'nineteen'; break;
-		}
-		if (tenths === undefined) {
-			output = hundreds + ' and ' + numbers;	
-		}
-		else {
-		output = hundreds + ' and ' + tenths + ' ' + numbers;
-		}
+	if (forTheTenths === 1) {
+		tenth = teens(input % 100);
 	}
 	else {
-		output = hundreds;
-	}	
+		tenth = tenths(forTheTenths);
 	}
-	document.getElementById("p8result").innerHTML = output;
+
+	function digitHundreds(number) {
+		
+		var result;
+
+		switch (number) {
+			case 0: result = "zero"; break;
+			case 1: result = "one"; break;
+			case 2: result = "two"; break;
+			case 3: result = "three"; break;
+			case 4: result = "four"; break;
+			case 5: result = "five"; break;
+			case 6: result = "six"; break;
+			case 7: result = "seven"; break;
+			case 8: result = "eight"; break;
+			case 9: result = "nine"; break;
+			default: ""; break;
+		}
+
+		return result;
+	}
+
+	function tenths(number) {
+		
+		var result;
+
+		switch (number) {
+			case 2: result = "twenty"; break;
+			case 3: result = "thirty"; break;
+			case 4: result = "fourty"; break;
+			case 5: result = "fifty"; break;
+			case 6: result = "sixty"; break;
+			case 7: result = "seventy"; break;
+			case 8: result = "eighty"; break;
+			case 9: result = "ninety"; break;
+			default: ""; break;
+		}
+
+		return result;
+	}
+
+	function teens(number) {
+
+		var result;
+
+		switch (number) {
+			case 10: result = "ten"; break;
+			case 11: result = "eleven"; break;
+			case 12: result = "twelve"; break;
+			case 13: result = "thirteen"; break;
+			case 14: result = "fourteen"; break;
+			case 15: result = "fifteen"; break;
+			case 16: result = "sixteen"; break;
+			case 17: result = "seventeen"; break;
+			case 18: result = "eighteen"; break;
+			case 19: result = "nineteen"; break;
+			default: ""; break;
+		}
+
+		return result;
+	}
+
+	function capitalize(output) {
+		return output.charAt(0).toUpperCase() + output.slice(1);
+	}
+
+
+	if (input < 10) { finalOutput = capitalize(digits); }
+
+	if (input >= 10 && input < 20) { finalOutput = capitalize(tenth); }
+
+	if (input >= 20 && input <= 99) {
+		if (!forTheNumbers) {
+			finalOutput = capitalize(tenth);
+		}
+		else {
+			finalOutput = capitalize(tenth) + ' ' + digits;
+		}
+	}
+
+	if (input > 99) {
+		if (input % 100 === 0) {
+			finalOutput = capitalize(hundred);
+		}
+		else if (forTheNumbers && forTheTenths === 0) {
+			finalOutput = capitalize(hundred) + and + digits;
+		}
+
+		else if (forTheTenths === 1) {
+			finalOutput = capitalize(hundred) + and + tenth;
+		}
+		else if (forTheTenths > 1) {
+			if (forTheNumbers !== 0) {
+			finalOutput = capitalize(hundred) + and + tenth + ' ' + digits;
+			}
+			else {
+				finalOutput = capitalize(hundred) + and + tenth;
+			}
+		}
+	}
+	
+	document.getElementById("p8result").innerHTML = finalOutput;
 }
