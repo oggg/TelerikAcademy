@@ -5,13 +5,13 @@ var word = 'ipsum';
 function findWord(str, word, isCaseSensitive) {
 	
 	function caseSensitive() {
-		var toFind = new RegExp(word, 'g');
+		var toFind = new RegExp(word, 'bg');
 		var found = str.match(toFind);
 		return found.length;
 	}
 
 	function caseInSensitive() {
-		var toFind = new RegExp(word, 'ig');
+		var toFind = new RegExp(word, 'big');
 		var found = str.match(toFind);
 		return found.length;
 	}
