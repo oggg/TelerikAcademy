@@ -45,7 +45,7 @@ namespace School.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ApplicationException))]
         public void CheckAddingAlreadyAddedStudentToCourse()
         {
             Student gosho = new Student("Gosho", 10000);

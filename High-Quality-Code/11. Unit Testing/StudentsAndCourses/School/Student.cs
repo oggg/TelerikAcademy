@@ -48,6 +48,7 @@ namespace School
                 {
                     throw new ArgumentOutOfRangeException(string.Format("Student number should be between {0} and {1}", STUDENT_NUMBER_START, STUDENT_NUMBER_END));
                 }
+                this.studentNumber = value;
             }
         }
 

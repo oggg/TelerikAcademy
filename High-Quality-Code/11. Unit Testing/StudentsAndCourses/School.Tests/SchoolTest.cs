@@ -44,7 +44,7 @@
         }
 
         [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
+        [ExpectedException(typeof(ArgumentException))]
         public void SchoolShouldThrowExceptionWhenExistingCourseAdded()
         {
             var school = new School("The School");

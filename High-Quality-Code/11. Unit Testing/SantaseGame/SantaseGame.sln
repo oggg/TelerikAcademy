@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaseLogic", "SantaseLogic\SantaseLogic.csproj", "{7A1EFE71-B80C-4AB8-827E-F541AF77B63F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaseLogic.Test", "SantaseLogic.Test\SantaseLogic.Test.csproj", "{36032699-144F-4089-B0A7-9F4A1863B33D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A1EFE71-B80C-4AB8-827E-F541AF77B63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1EFE71-B80C-4AB8-827E-F541AF77B63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1EFE71-B80C-4AB8-827E-F541AF77B63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1EFE71-B80C-4AB8-827E-F541AF77B63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36032699-144F-4089-B0A7-9F4A1863B33D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36032699-144F-4089-B0A7-9F4A1863B33D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36032699-144F-4089-B0A7-9F4A1863B33D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36032699-144F-4089-B0A7-9F4A1863B33D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

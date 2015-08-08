@@ -35,7 +35,7 @@ namespace School.Tests
         public void TestStudentNumberValueInRange()
         {
             Student gosho = new Student("Gosho", 30000);
-            Assert.IsTrue(Helper.isBetween(gosho.Number), "Student number is out of ranges");
+            Assert.IsTrue(Helper.isBetween(gosho.Number), "Student number is out of range");
         }
 
         [TestMethod]

@@ -13,7 +13,7 @@ namespace School.Tests
 
         public static bool isBetween(int value)
         {
-            if (STUDENT_NUMBER_START >= value || value >= STUDENT_NUMBER_END)
+            if (STUDENT_NUMBER_START <= value || value <= STUDENT_NUMBER_END)
             {
                 return true;
             }

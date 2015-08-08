@@ -8,7 +8,7 @@ namespace School
         private const int MAX_NUMBER_OF_STUDENTS = 29;
 
         private string courseName;
-        private IList<Student> students;
+        private ICollection<Student> students;
 
         public Course(string name)
         {
@@ -55,11 +55,11 @@ namespace School
                 throw new ArgumentNullException("Cannot add non-existing student to course!");
             }
 
-            if (this.Students.Contains(student))
+            if (this.students.Contains(student))
             {
-                throw new ArgumentException("This student already attends the course");
+                throw new ApplicationException("This student already attends the course");
             }
-            this.Students.Add(student);
+            this.students.Add(student);
         }
 
         public void RemoveStudent(Student student)
