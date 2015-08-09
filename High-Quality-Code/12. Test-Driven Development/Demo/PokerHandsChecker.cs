@@ -10,7 +10,7 @@ namespace Poker
 
         public bool IsValidHand(IHand hand)
         {
-            if(hand == null)
+            if (hand == null)
             {
                 throw new ArgumentNullException("Trying to check a null hand");
             }
@@ -45,31 +45,23 @@ namespace Poker
             throw new NotImplementedException();
         }
 
-        public bool IsFourOfAKind(IHand hand) 
+        public bool IsFourOfAKind(IHand hand)
         {
             var cards = hand.Cards;
-            var sortedCards = cards.OrderBy(card => card.Face).ThenBy(card => card.Suit).ToList();
+            var sortedCards = cards.OrderBy(card => card.Face).ToList();
             int equalCardFaces = 1;
             for (int i = 1; i < sortedCards.Count; i++)
             {
-                if (sortedCards[i].Face.Equals(sortedCards[i - 1].Face))
+                if (sortedCards[i].Face == sortedCards[i - 1].Face)
                 {
                     equalCardFaces++;
+                    if (equalCardFaces == 4)
+                    {
+                        return true;
+                    }
                 }
-                else
-                {
-                    equalCardFaces = 1;
-                }
             }
-
-            if (equalCardFaces == 4)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         public bool IsFullHouse(IHand hand)
@@ -84,7 +76,7 @@ namespace Poker
 
             for (int i = 1; i < sortedCards.Count; i++)
             {
-                if(sortedCards[i].Suit != sortedCards[i - 1].Suit)
+                if (sortedCards[i].Suit != sortedCards[i - 1].Suit)
                 {
                     return false;
                 }
@@ -94,7 +86,7 @@ namespace Poker
                     return false;
                 }
             }
-            
+
             return true;
         }
 
