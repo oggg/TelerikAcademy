@@ -19,7 +19,7 @@ namespace Matrix
 
             dy = dirY[cd + 1];
         }
-        static bool proverka(int[,] theMatrix, int row, int column)
+        static bool CheckIfDirectionIsPossible(int[,] theMatrix, int row, int column)
         {
             int[] dirX = { 1, 1, 1, 0, -1, -1, -1, 0 };
             int[] dirY = { 1, 0, -1, -1, -1, 0, 1, 1 };
@@ -29,16 +29,15 @@ namespace Matrix
                 {
                     dirX[i] = 0;
                 }
-                if (column + dirY[i] >= theMatrix.GetLength(0) || column + dirY[i] < 0)
+                if (column + dirY[i] >= theMatrix.GetLength(1) || column + dirY[i] < 0)
                 {
                     dirY[i] = 0;
                 }
-            }
-            for (int i = 0; i < theMatrix.GetLength(0); i++)
                 if (theMatrix[row + dirX[i], column + dirY[i]] == 0)
                 {
                     return true;
                 }
+            }                
 
             return false;
         }
@@ -67,38 +66,52 @@ namespace Matrix
             }
             
             int[,] matrix = new int[number, number];
-            int step = number, k = 1, i = 0, j = 0, dx = 1, dy = 1;
+            int step = number;
+            int currentCellValue = 1;
+            int row = 0;
+            int column = 0;
+            int dRow = 1;
+            int dColumn = 1;
             while (true)
             { //malko e kofti tova uslovie, no break-a raboti 100% : )
-                matrix[i, j] = k;
+                matrix[row, column] = currentCellValue;
+                
+                if (!CheckIfDirectionIsPossible(matrix, row, column))
+                {
+                    break;
+                }
+                
+             while (row + dRow >= number || row + dRow < 0 
+                    || column + dColumn >= number || column + dColumn < 0 
+                    || matrix[row + dRow, column + dColumn] != 0)
+                {
+                    change(ref dRow, ref dColumn);
+                }
 
-                if (!proverka(matrix, i, j)) { break; } // prekusvame ako sme se zadunili
-                if (i + dx >= number || i + dx < 0 || j + dy >= number || j + dy < 0 || matrix[i + dx, j + dy] != 0)
-
-
-                    while ((i + dx >= number || i + dx < 0 || j + dy >= number || j + dy < 0 || matrix[i + dx, j + dy] != 0)) { change(ref dx, ref dy); }
-                i += dx; j += dy; k++;
+                row += dRow;
+                column += dColumn;
+                currentCellValue++;
             }
             for (int p = 0; p < number; p++)
             {
                 for (int q = 0; q < number; q++) Console.Write("{0,3}", matrix[p, q]);
                 Console.WriteLine();
             }
-            find_cell(matrix, out i, out j);
-            if (i != 0 && j != 0)
+            find_cell(matrix, out row, out column);
+            if (row != 0 && column != 0)
             { // taka go napravih, zashtoto funkciqta ne mi davashe da ne si definiram out parametrite
-                dx = 1; dy = 1;
+                dRow = 1; dColumn = 1;
 
 
                 while (true)
                 { //malko e kofti tova uslovie, no break-a raboti 100% : )
-                    matrix[i, j] = k;
-                    if (!proverka(matrix, i, j)) { break; }// prekusvame ako sme se zadunili
-                    if (i + dx >= number || i + dx < 0 || j + dy >= number || j + dy < 0 || matrix[i + dx, j + dy] != 0)
+                    matrix[row, column] = currentCellValue;
+                    if (!CheckIfDirectionIsPossible(matrix, row, column)) { break; }// prekusvame ako sme se zadunili
+                    if (row + dRow >= number || row + dRow < 0 || column + dColumn >= number || column + dColumn < 0 || matrix[row + dRow, column + dColumn] != 0)
 
 
-                        while ((i + dx >= number || i + dx < 0 || j + dy >= number || j + dy < 0 || matrix[i + dx, j + dy] != 0)) change(ref dx, ref dy);
-                    i += dx; j += dy; k++;
+                        while ((row + dRow >= number || row + dRow < 0 || column + dColumn >= number || column + dColumn < 0 || matrix[row + dRow, column + dColumn] != 0)) change(ref dRow, ref dColumn);
+                    row += dRow; column += dColumn; currentCellValue++;
                 }
             }
             for (int pp = 0; pp < number; pp++)
