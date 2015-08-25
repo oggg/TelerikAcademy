@@ -8,7 +8,7 @@ Create a function that takes an id or DOM element and an array of contents
 * Add divs to the element
   * Each div's content must be one of the items from the contents array
 * The function must remove all previous content from the DOM element provided
-* Throws if:
+* Throws iaf:
   * The provided first parameter is neither string or existing DOM element
   * The provided id does not select anything (there is no element that has such an id)
   * Any of the function params is missing
@@ -34,10 +34,6 @@ module.exports = function () {
       if(args.length < 2) {
           throw new Error('One of the parameters is missing');
       }
-
-      //if(typeof element !== 'string') {
-      //    throw new TypeError('The first element should be a string');
-      //}
 
       if(!Array.isArray(contents)) {
           throw  new TypeError('The second element must be an array');
