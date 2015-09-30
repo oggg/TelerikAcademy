@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+<students xmlns="urn:students"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="students file://./students.xsd">
+  <student>
+    <name>Pesho</name>
+    <gender>male</gender>
+    <birth_date>01.01.1990</birth_date>
+    <phone>+359888888888</phone>
+    <email>Pesho@mail.com</email>
+    <course>2</course>
+    <speciality>Programing</speciality>
+    <faculcy_number>123456</faculcy_number>
+    <exams_passed>
+      <exam>
+        <exam_title>C#1</exam_title>
+        <tutor>Ivo</tutor>
+        <score>90</score>
+      </exam>
+      <exam>  
+        <exam_title>C#2</exam_title>
+        <tutor>Ivo</tutor>
+        <score>100</score>
+      </exam>
+    </exams_passed>
+  </student>
+  <student>
+    <name>Gosho</name>
+    <gender>male</gender>
+    <birth_date>01.01.1991</birth_date>
+    <phone>+359888888889</phone>
+    <email>Gosho@mail.com</email>
+    <course>2</course>
+    <speciality>Programing</speciality>
+    <faculcy_number>123455</faculcy_number>
+    <exams_passed>
+      <exam>
+        <exam_title>Js fundamentals</exam_title>
+        <tutor>Evlogi</tutor>
+        <score>90</score>
+      </exam>
+      <exam>
+        <exam_title>Js OOP</exam_title>
+        <tutor>Doncho</tutor>
+        <score>100</score>
+      </exam>
+    </exams_passed>
+  </student>
+</students>
