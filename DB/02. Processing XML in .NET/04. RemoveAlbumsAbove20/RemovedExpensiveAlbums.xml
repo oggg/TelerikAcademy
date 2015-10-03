@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <album>
+    <name>...And Justice for All</name>
+    <artist>Metallica</artist>
+    <year>1984</year>
+    <producer>Metallica</producer>
+    <price>12</price>
+    <songs>
+      <song>
+        <title>Harvester of Sorrow</title>
+        <duration>5:07</duration>
+      </song>
+      <song>
+        <title>Eye of the Beholder</title>
+        <duration>3:15</duration>
+      </song>
+      <song>
+        <title>One</title>
+        <duration>4:15</duration>
+      </song>
+    </songs>
+  </album>
+</catalog>

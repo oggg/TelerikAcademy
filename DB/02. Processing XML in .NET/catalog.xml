@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalog>
+  <album>
+    <name>Kill 'Em All</name>
+    <artist>Metallica</artist>
+    <year>1983</year>
+    <producer>Metallica</producer>
+    <price>28</price>
+    <songs>
+      <song>
+        <title>Whiplash</title>
+        <duration>3:00</duration>
+      </song>
+      <song>
+        <title>Jump in the fire</title>
+        <duration>3:45</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>...And Justice for All</name>
+    <artist>Metallica</artist>
+    <year>1984</year>
+    <producer>Metallica</producer>
+    <price>12</price>
+    <songs>
+      <song>
+        <title>Harvester of Sorrow</title>
+        <duration>5:07</duration>
+      </song>
+      <song>
+        <title>Eye of the Beholder</title>
+        <duration>3:15</duration>
+      </song>
+      <song>
+        <title>One</title>
+        <duration>4:15</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>The day is my enemy</name>
+    <artist>Prodigy</artist>
+    <year>2015</year>
+    <producer>Prodigy</producer>
+    <price>30</price>
+    <songs>
+      <song>
+        <title>The Day Is My Enemy</title>
+        <duration>5:07</duration>
+      </song>
+      <song>
+        <title>Rebel Radio</title>
+        <duration>5:15</duration>
+      </song>
+      <song>
+        <title>Destroy</title>
+        <duration>3:45</duration>
+      </song>
+      <song>
+        <title>Rok-Weiler</title>
+        <duration>4:55</duration>
+      </song>
+    </songs>
+  </album>
+</catalog>
