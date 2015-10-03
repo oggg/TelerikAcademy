@@ -7,44 +7,42 @@
 			<file>directories.xml</file>
 			<file>Program.cs</file>
 			<file>test.cs</file>
-			<directory name="bin">
+		</files>
+		<directory name="bin">
+			<files />
+			<directory name="Debug">
 				<files>
-					<directory name="Debug">
-						<files>
-							<file>_09.TraverseDirectory.exe</file>
-							<file>_09.TraverseDirectory.exe.config</file>
-							<file>_09.TraverseDirectory.pdb</file>
-							<file>_09.TraverseDirectory.vshost.exe</file>
-							<file>_09.TraverseDirectory.vshost.exe.config</file>
-							<file>_09.TraverseDirectory.vshost.exe.manifest</file>
-						</files>
-					</directory>
-					<directory name="obj">
-						<files>
-							<directory name="Debug">
-								<files>
-									<file>09. TraverseDirectory.csproj.FileListAbsolute.txt</file>
-									<file>09. TraverseDirectory.csprojResolveAssemblyReference.cache</file>
-									<file>DesignTimeResolveAssemblyReferencesInput.cache</file>
-									<file>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
-									<file>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
-									<file>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
-									<file>_09.TraverseDirectory.exe</file>
-									<file>_09.TraverseDirectory.pdb</file>
-									<directory name="TempPE">
-										<files />
-									</directory>
-								</files>
-								<directory name="Properties">
-									<files>
-										<file>AssemblyInfo.cs</file>
-									</files>
-								</directory>
-							</directory>
-						</files>
-					</directory>
+					<file>_09.TraverseDirectory.exe</file>
+					<file>_09.TraverseDirectory.exe.config</file>
+					<file>_09.TraverseDirectory.pdb</file>
+					<file>_09.TraverseDirectory.vshost.exe</file>
+					<file>_09.TraverseDirectory.vshost.exe.config</file>
+					<file>_09.TraverseDirectory.vshost.exe.manifest</file>
 				</files>
 			</directory>
-		</files>
+		</directory>
+		<directory name="obj">
+			<files />
+			<directory name="Debug">
+				<files>
+					<file>09. TraverseDirectory.csproj.FileListAbsolute.txt</file>
+					<file>09. TraverseDirectory.csprojResolveAssemblyReference.cache</file>
+					<file>DesignTimeResolveAssemblyReferencesInput.cache</file>
+					<file>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+					<file>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+					<file>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+					<file>_09.TraverseDirectory.exe</file>
+					<file>_09.TraverseDirectory.pdb</file>
+				</files>
+				<directory name="TempPE">
+					<files />
+				</directory>
+			</directory>
+		</directory>
+		<directory name="Properties">
+			<files>
+				<file>AssemblyInfo.cs</file>
+			</files>
+		</directory>
 	</directory>
 </directories>

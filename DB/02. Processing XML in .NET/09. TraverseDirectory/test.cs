@@ -1,44 +1,32 @@
-public class RecursiveFileSearch
-{
-    static System.Collections.Specialized.StringCollection log = new System.Collections.Specialized.StringCollection();
+using System;
+using System.Xml;
+using System.Xml.Schema;
 
+class XmlSchemaSetExample
+{
     static void Main()
     {
-        // Start with drives if you have to search the entire computer.
-        string[] drives = System.Environment.GetLogicalDrives();
+        XmlReaderSettings booksSettings = new XmlReaderSettings();
+        booksSettings.Schemas.Add("http://www.contoso.com/books", "books.xsd");
+        booksSettings.ValidationType = ValidationType.Schema;
+        booksSettings.ValidationEventHandler += new ValidationEventHandler(booksSettingsValidationEventHandler);
 
-        foreach (string dr in drives)
-        {
-            System.IO.DriveInfo di = new System.IO.DriveInfo(dr);
-            System.IO.DirectoryInfo rootDir = di.RootDirectory;
-            WalkDirectoryTree(rootDir);
-        }
+        XmlReader books = XmlReader.Create("books.xml", booksSettings);
+
+        while (books.Read()) { }
     }
 
-    static void WalkDirectoryTree(System.IO.DirectoryInfo root)
+    static void booksSettingsValidationEventHandler(object sender, ValidationEventArgs e)
     {
-        System.IO.FileInfo[] files = null;
-        System.IO.DirectoryInfo[] subDirs = null;
-
-        if (files != null)
+        if (e.Severity == XmlSeverityType.Warning)
         {
-            foreach (System.IO.FileInfo fi in files)
-            {
-                // In this example, we only access the existing FileInfo object. If we
-                // want to open, delete or modify the file, then
-                // a try-catch block is required here to handle the case
-                // where the file has been deleted since the call to TraverseTree().
-                Console.WriteLine(fi.FullName);
-            }
-
-            // Now find all the subdirectories under this directory.
-            subDirs = root.GetDirectories();
-
-            foreach (System.IO.DirectoryInfo dirInfo in subDirs)
-            {
-                // Resursive call for each subdirectory.
-                WalkDirectoryTree(dirInfo);
-            }
-        }            
+            Console.Write("WARNING: ");
+            Console.WriteLine(e.Message);
+        }
+        else if (e.Severity == XmlSeverityType.Error)
+        {
+            Console.Write("ERROR: ");
+            Console.WriteLine(e.Message);
+        }
     }
 }

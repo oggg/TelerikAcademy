@@ -23,9 +23,9 @@ namespace TraverseDirectory
 
                 writer.WriteStartDocument();
                 writer.WriteStartElement("directories");
-                
+
                 TraversingDirectories(rootDir, writer);
-                
+
                 writer.WriteEndElement();
 
             }
@@ -34,7 +34,6 @@ namespace TraverseDirectory
         static void TraversingDirectories(DirectoryInfo rootDir, XmlTextWriter writer)
         {
             FileInfo[] files = null;
-            DirectoryInfo[] subDirs = null;
 
             try
             {
@@ -45,9 +44,10 @@ namespace TraverseDirectory
                 Console.WriteLine(e.Message);
             }
 
+
             writer.WriteStartElement("directory");
             writer.WriteAttributeString("name", rootDir.Name);
-            
+
             if (files != null)
             {
                 writer.WriteStartElement("files");
@@ -55,14 +55,19 @@ namespace TraverseDirectory
                 {
                     writer.WriteElementString("file", file.Name);
                 }
-                subDirs = rootDir.GetDirectories();
+                writer.WriteEndElement();
+            }
+
+            DirectoryInfo[] subDirs = null;
+            subDirs = rootDir.GetDirectories();
+            if (subDirs != null)
+            {
                 foreach (var dir in subDirs)
                 {
                     TraversingDirectories(dir, writer);
                 }
+                writer.WriteEndElement();
             }
-
-            writer.WriteEndElement();
         }
     }
 }

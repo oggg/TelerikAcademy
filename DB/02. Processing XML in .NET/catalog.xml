@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<catalog>
+<?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
+<catalog xmlns="http://www.nakov.com/schemas/library"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.nakov.com/schemas/library catalog.xsd">
   <album>
     <name>Kill 'Em All</name>
     <artist>Metallica</artist>
