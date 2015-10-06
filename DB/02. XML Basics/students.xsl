@@ -35,7 +35,7 @@
               <b>Exams passed</b>
             </td>
           </tr>
-          <xsl:for-each select="students/student">
+          <xsl:for-each select="/students/student">
             <tr bgcolor="white">
               <td>
                 <xsl:value-of select="name"/>
@@ -62,13 +62,32 @@
                 <xsl:value-of select="faculcy_number"/>
               </td>
               <td>
-                <xsl:for-each select="exams_passed/exam">
-                  <div>
-                    <xsl:value-of select="exam_title"/>
-                    <xsl:value-of select="tutor"/>
-                    <xsl:value-of select="score"/>
-                  </div>
-                </xsl:for-each>
+                <table cellspacing="0">
+                  <tr>
+                    <td>
+                      Exam title
+                    </td>
+                    <td>
+                      Tutor
+                    </td>
+                    <td>
+                      Score
+                    </td>
+                  </tr>
+                  <xsl:for-each select="exams_passed/exam">
+                    <tr>
+                      <td>
+                        <xsl:value-of select="exam_title"/>
+                      </td>
+                      <td>
+                        <xsl:value-of select="tutor"/>
+                      </td>
+                      <td>
+                        <xsl:value-of select="score"/>
+                      </td>
+                    </tr>
+                  </xsl:for-each>
+                </table>
               </td>
             </tr>
           </xsl:for-each>
