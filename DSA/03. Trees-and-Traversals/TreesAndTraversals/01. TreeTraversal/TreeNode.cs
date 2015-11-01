@@ -52,5 +52,25 @@ namespace TreeTraversal
         {
             return this.children[index];
         }
+
+        public IList<TreeNode> LongestPath()
+        {
+            IList<TreeNode> path = new List<TreeNode>();
+            foreach (var node in this.children)
+            {
+                IList<TreeNode> tmp = node.LongestPath();
+                if (tmp.Count > path.Count)
+                {
+                    path = tmp;
+                }
+            }
+            path.Insert(0, this);
+            return path;
+        }
+
+        public override string ToString()
+        {
+            return this.Value.ToString();
+        }
     }
 }

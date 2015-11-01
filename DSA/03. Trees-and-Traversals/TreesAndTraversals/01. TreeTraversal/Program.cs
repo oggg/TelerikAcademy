@@ -6,6 +6,8 @@
 
     class Program
     {
+        private const int SumOfNodeValues = 10;
+
         static void Main()
         {
             int linesNumber = int.Parse(Console.ReadLine());
@@ -41,24 +43,29 @@
                 parentNode.AddChild(childNode);
             }
 
+            // var tree = new Tree(root);
+            // tree.TraverseDFS(root, "    ");
+
             // Subtask 1 - the root node
             var root = allNodes.FirstOrDefault(r => r.Parent == null);
             Console.WriteLine("Root node value -> {0}", root.Value);
 
             // Subtask 2 - all leaf nodes
             var leafs = allNodes.Where(l => l.ChildrenCount == 0);
-            foreach (var leaf in leafs)
-            {
-                Console.WriteLine("Leaf node value -> {0}", leaf.Value);
-            }
 
             // Subtask 3 - all middle nodes
+            var middleNodes = allNodes.Where(m => m.Parent != null && m.ChildrenCount > 0);
 
+            // Subtask 4 - longest path
+            var longestPath = root.LongestPath();
+            //foreach (var node in longestPath)
+            //{
+            //    Console.Write(string.Format("{0} - ", node.ToString()));
+            //}
 
-            //var tree = new Tree(root);
-            // tree.TraverseDFS(root, "    ");
-
-
+            // Subtask 5 - all paths with given sum
+            string path = string.Empty;
+            SubsetSum(root, 9, path);
         }
 
         private static IList<int> ReadValues(string input)
@@ -75,6 +82,31 @@
         {
             var node = nodes.FirstOrDefault(n => n.Value == value);
             return node;
+        }
+
+        private static void SubsetSum(TreeNode root, int sum, string path)
+        {
+            if (root != null)
+            {
+                if (root.Value > sum)
+                {
+                    return;
+                }
+                else
+                {
+                    path += string.Format(" {0}", root);
+                    sum -= root.Value;
+                    if (sum == 0)
+                    {
+                        Console.WriteLine(path);
+                    }
+
+                    for (int i = 0; i < root.ChildrenCount; i++)
+                    {
+                        SubsetSum(root.GetChild(i), sum, path);
+                    }
+                }
+            }
         }
     }
 }
