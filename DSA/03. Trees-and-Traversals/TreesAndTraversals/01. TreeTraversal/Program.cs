@@ -7,6 +7,7 @@
     class Program
     {
         private const int SumOfNodeValues = 10;
+        private const int SumOfSubtrees = 12;
 
         static void Main()
         {
@@ -66,6 +67,19 @@
             // Subtask 5 - all paths with given sum
             string path = string.Empty;
             SubsetSum(root, 9, path);
+
+            // Subtask 6 - all subtrees with given sum of their nodes
+            Console.WriteLine("Subtask 6");
+            foreach (var node in middleNodes)
+            {
+                var currentTree = new Tree(node);
+                int subTreeSum = currentTree.SumBFS(node);
+                if (subTreeSum == SumOfSubtrees)
+                {
+                    Console.WriteLine("Subtree with required sum:");
+                    currentTree.TraverseDFS(node, " ");
+                }
+            }
         }
 
         private static IList<int> ReadValues(string input)

@@ -27,6 +27,12 @@ namespace TreeTraversal
             private set { this.parent = value; }
         }
 
+        public List<TreeNode> Children
+        {
+            get { return new List<TreeNode>(this.children); }
+            private set { this.children = value; }
+        }
+
         public void AddChild(TreeNode child)
         {
             if (child == null)
