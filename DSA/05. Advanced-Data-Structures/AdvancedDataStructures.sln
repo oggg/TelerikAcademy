@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. PriorityQueueImplementation", "PriorityQueueImplementation\01. PriorityQueueImplementation.csproj", "{6158E25E-A761-4F76-8B6A-E2E5E36D239E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. LargeCollection", "LargeCollection\02. LargeCollection.csproj", "{850A0A30-B2C7-43B1-B8FC-7B660C70BE43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6158E25E-A761-4F76-8B6A-E2E5E36D239E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6158E25E-A761-4F76-8B6A-E2E5E36D239E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6158E25E-A761-4F76-8B6A-E2E5E36D239E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6158E25E-A761-4F76-8B6A-E2E5E36D239E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{850A0A30-B2C7-43B1-B8FC-7B660C70BE43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{850A0A30-B2C7-43B1-B8FC-7B660C70BE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{850A0A30-B2C7-43B1-B8FC-7B660C70BE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{850A0A30-B2C7-43B1-B8FC-7B660C70BE43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
