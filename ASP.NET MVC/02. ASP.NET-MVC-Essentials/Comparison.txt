@@ -1,0 +1,22 @@
+The main advantages of ASP.net MVC are:
+
+    Enables the full control over the rendered HTML.
+
+    Provides clean separation of concerns(SoC).
+
+    Enables Test Driven Development (TDD).
+
+    Easy integration with JavaScript frameworks.
+
+    Following the design of stateless nature of the web.
+
+    RESTful urls that enables SEO.
+
+    No ViewState and PostBack events
+
+The main advantage of ASP.net Web Form are:
+
+    It provides RAD development
+
+    Easy development model for developers those coming from winform development.
+
